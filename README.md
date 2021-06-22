@@ -1,5 +1,5 @@
-# Repositorio generado de [minitorch/Module-0](https://github.com/minitorch/Module-0)
-## MiniTorch Module 0 Completado
+# Repositorio generado de [minitorch/Module-1](https://github.com/minitorch/Module-1)
+## MiniTorch Module 1 - En proceso
 
 <img src="https://minitorch.github.io/_images/match.png" width="100px">
 
