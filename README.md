@@ -1,20 +1,21 @@
-# Repositorio generado de [minitorch/Module-1](https://github.com/minitorch/Module-1)
-## MiniTorch Module 1 - En proceso
+# MiniTorch Module 1  
 
 <img src="https://minitorch.github.io/_images/match.png" width="100px">
 
-# Estudiante 
-	Walter Jesús Felipe Tolentino
-	
-Este modulo requiere `operators.py` y `module.py` del Modulo 0
+* Docs: https://minitorch.github.io/
+
+* Overview: https://minitorch.github.io/module1.html
+
+This module requires `operators.py` and `module.py` from Module 0
 
 ```
 cp ../Module-0/operators.py ../Module-0/module.py minitorch/
 ```
 
-# Ejecutar las pruebas
+
+* Tests:
+
 ```
-python3 run_tests.py
+python run_tests.py
 ```
 
-# Resultados

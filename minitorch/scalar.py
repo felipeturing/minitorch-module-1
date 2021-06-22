@@ -8,23 +8,31 @@ import numpy as np
 
 
 def central_difference(f, *vals, arg=0, epsilon=1e-6):
-    r"""
-    Computes an approximation to the derivative of `f` with respect to one arg.
+	r"""
+	Computes an approximation to the derivative of `f` with respect to one arg.
 
-    See :doc:`derivative` or https://en.wikipedia.org/wiki/Finite_difference for more details.
+	See :doc:`derivative` or https://en.wikipedia.org/wiki/Finite_difference for more details.
 
-    Args:
-       f : arbitrary function from n-scalar args to one value
-       *vals (floats): n-float values :math:`x_0 \ldots x_{n-1}`
-       arg (int): the number :math:`i` of the arg to compute the derivative
-       epsilon (float): a small constant
+	Args:
+	   f : arbitrary function from n-scalar args to one value
+	   *vals (floats): n-float values :math:`x_0 \ldots x_{n-1}`
+	   arg (int): the number :math:`i` of the arg to compute the derivative (la derivada parcial de f respecto de x_i)
+	   epsilon (float): a small constant
 
-    Returns:
-       float : An approximation of :math:`f'_i(x_0, \ldots, x_{n-1})`
-    """
-    # TODO: Implement for Task 1.1.
-    raise NotImplementedError('Need to implement for Task 1.1')
+	Returns:
+	   float : An approximation of :math:`f'_i(x_0, \ldots, x_{n-1})`
+	"""
+	# TODO: Implement for Task 1.1.
+	x_inf = list(vals)
+	x_sup = list(vals)
+	x_inf[arg] += epsilon
+	x_sup[arg] -= epsilon
+	return (f(*(x_inf)) - f(*x_sup))/(2*epsilon) # *x es un iterable de la tupla o lista x
 
+# ~ # test in place
+# ~ def f(x, y):
+	# ~ return x*y
+# ~ print(central_difference(f, 5, 20, arg=1))
 
 ## Task 1.2 and 1.4
 ## Scalar Forward and Backward
