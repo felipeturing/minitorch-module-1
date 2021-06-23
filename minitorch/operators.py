@@ -6,10 +6,10 @@ def mul(x, y):
 	return x * y
 
 def id(x):
-	return x
+	return float(x)
 
 def neg(x):
-	return -x
+	return float(-x)
 
 def add(x, y):
 	return x + y
@@ -26,15 +26,15 @@ def max(x, y):
 def sigmoid(x):
 	return (
 		1.0 / (1.0 + math.pow(math.e, -x))
-		if x >= 0
+		if x >= 0.0
 		else math.pow(math.e, x) / (1.0 + math.pow(math.e, x))
 	)
 
 def relu(x):
-	return x if x > 0 else 0
+	return x if x > 0.0 else 0.0
 
 def relu_back(x, y):
-	return y if x > 0 else 0
+	return y if x > 0.0 else 0.0
 
 EPS = 1e-6
 
