@@ -13,10 +13,9 @@ import visdom
 ## Create an autodiff expression here.
 def expression():
     x = minitorch.Scalar(10, name="x")
-    y = (x + 10.0) * 20
+    y = ((x + 10.0) * 20) + x
     y.name = "y"
     return y
-
 
 class GraphBuilder:
     def __init__(self):

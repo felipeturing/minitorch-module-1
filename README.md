@@ -11,3 +11,9 @@
 python3 run_tests.py
 ```
 # Resultados
+
+## task 1.1 completado
+## task 1.2 completado
+<img src="grafo-computacional.png" width=500px">
+## task 1.3 completado
+## task 1.3 en proceso

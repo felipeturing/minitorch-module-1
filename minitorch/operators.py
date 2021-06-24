@@ -100,7 +100,6 @@ def reduce(fn, start):
 		for item in ls:
 			ans = fn(ans, item)
 		return ans
-
 	return process
 
 def sum(ls):
