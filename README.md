@@ -18,4 +18,4 @@ python3 run_tests.py
 <img src="grafo-computacional.png" width="500px">
 
 ## task 1.3 completado
-## task 1.3 en proceso
+## task 1.4 en proceso
